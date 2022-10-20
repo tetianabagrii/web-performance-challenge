@@ -50,11 +50,19 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, minimum-scale=1.0" />
   <style>
-    .footer__link {
+    .footer__link,
+    .main__section {
       color: #fff;
     }
     .swiper-text {
       overflow: hidden;
+    }
+    .footer__sponsor a {
+      text-decoration: underline;
+      color: #fff;
+    }
+    .navigation__link:hover {
+      color: #fff;
     }
   </style>
 </head>
@@ -162,7 +170,7 @@
     </div>
   </main>
   
-  <div class="disclaimer__base">
+  <div class="disclaimer__base" role="region" aria-label="Disclaimer">
     <p class="disclaimer__text">
       This site is made for the purpose of web performance and accessibility testing challeng and it is full of bad practices on purpose.
     </p>
