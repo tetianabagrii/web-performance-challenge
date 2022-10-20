@@ -40,7 +40,6 @@
     window.addEventListener('load', () => {
       document.body.removeAttribute('style');
       initAd();
-      document.getElementsByClassName('swiper')[0].swiper.autoplay = false;
     });
     // antiflicker();
   </script>
@@ -72,6 +71,11 @@
     }
     .footer__menu ul {
       display: inline-flex;
+    }
+    .main__content img {
+      object-fit: cover;
+      height: 100%;
+      width: 100%;
     }
   </style>
 </head>
@@ -114,25 +118,10 @@
       </div>
       
       <div class="main__hero main__section">
-        <div class="hero__carousel div1 swiper">
+        <div class="hero__carousel div1">
           <!-- Additional required wrapper -->
-          <div class="swiper-wrapper">
-            <!-- Slides -->
-            <div class="swiper-slide"><img aria-label="Slide image" data-src="https://images.unsplash.com/flagged/photo-1579632993381-847f6a71a3cd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=100"></div>
-            <div class="swiper-slide"></div>
-            <div class="swiper-slide"></div>
-          </div>
-          <div class="swiper-text">Local restaurants finally optimising time to first bite</div>
-        </div>
-        <script src="script/carousel.js"></script>
-        
-        <div class="hero__teaser div2">
-          <img data-src="https://images.unsplash.com/photo-1432405972618-c60b0225b8f9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&h=400&q=100" alt="Teaser image" class="hero__img">
-          <div class="hero__teaserText"><a href="https://www.netcentric.biz/">Top 10 waterfalls to analyse this week</a></div>
-        </div>
-        <div class="hero__teaser div3">
-          <img data-src="https://i0.wp.com/post.healthline.com/wp-content/uploads/2020/06/little_girl_-bouncing-off-the-trampoline-1296x728-header.jpg?w=1155&h=1528" alt="Teaser image" class="hero__img">
-          <div class="hero__teaserText"><a href="https://www.netcentric.biz/">Bouncing rates increased signifincantly last week</a></div>
+          <img alt="Teaser image" src="https://i0.wp.com/post.healthline.com/wp-content/uploads/2020/06/little_girl_-bouncing-off-the-trampoline-1296x728-header.jpg?w=1155&amp;h=1528" alt="Teaser image" class="hero__img" src="https://i0.wp.com/post.healthline.com/wp-content/uploads/2020/06/little_girl_-bouncing-off-the-trampoline-1296x728-header.jpg?w=1155&amp;h=1528" />
+          <div>Local restaurants finally optimising time to first bite</div>
         </div>
       </div>
 
